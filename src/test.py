@@ -2,6 +2,9 @@ from pyresparser import ResumeParser
 import os 
 from docx import Document
 
-data = ResumeParser('/home/rsilvergun/Documents/Work/Python/Resume-Parser/src/resume.docx').get_extracted_data()
+file = os.path.join( '/home/rsilvergun/Documents/Work/Python/Resume-Parser/sample-data/resume.docx')
+
+
+data = ResumeParser(file).get_extracted_data()
 
 print(data)
